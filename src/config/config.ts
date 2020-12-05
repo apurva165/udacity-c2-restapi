@@ -5,9 +5,9 @@ export const config = {
     "database": process.env.DATABASE,
     "host": process.env.HOST,
     "dialect": "postgres",
-    "aws_region": "us-east-2",
+    "aws_region": process.env.AWS_REGION,
     "aws_profile": process.env.AWS_PROFILE,
-    "aws_media_bucket": "akulkarnibucket-dev"
+    "aws_media_bucket": process.env.AWS_MEDIA_BUCKET
   },
   "prod": {
     "username": "",
